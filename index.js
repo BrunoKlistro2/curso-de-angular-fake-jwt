@@ -23,7 +23,7 @@ app.post("/sign", (req, res) => {
       expiresIn: 100000,
     });
 
-    return res.json({ token: token });
+    return res.json({ token });
   }
 
   res.status(500).json({ message: "Usuário ou senha incorreta" });
